@@ -14,8 +14,8 @@
 
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="/css/message.css">
-        <link rel="stylesheet" href="../login/css/estilos.css"
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -34,20 +34,18 @@
             </div>
         </div>
 
-        <section class="login-box">
-            <img class="logo" src="../login/img/logo2.png"  width="500" height="500">
-            <h1>Verificación de Usuario</h1>
+        <header>
+          <img src="images/logo.png">
+        </header>
 
-            <form id="signinm">
-                <label for="username">Correo Electronico</label>
-                <input type="text"  placeholder="Correo electronico">
 
-                <label for="password">Codigo de Verificación</label>
-                <input type="password"   placeholder="Codigo">
+        <section class="form-wrap">
+            <h1>Verify Email</h1>
+            <form id="verifyForm">
+              <input type="email" id="emailInputVerify" placeholder="Email" required>
+              <input type="text" id="codeInputVerify" placeholder="Verification Code" pattern=".*" required>
 
-                <input type="Submit" value="Verificar" >
-
-                <a href="#">Olvidaste tu contraseña?</a>
+              <input type="submit" value="Verify">
             </form>
         </section>
 
