@@ -9,8 +9,8 @@ body{
 
 .login-box{
     width: 320px;
-    height: 370px;
-    background: rgb(58,70,81,.90);
+    height: 420px;
+    background: #3a4651;
     color:#fff;
     top: 50%;
     left: 50%;
@@ -27,7 +27,6 @@ body{
     position: absolute;
     top:-50px;
     left: calc(50% - 50px);
-   
 }
 
 .login-box h1{

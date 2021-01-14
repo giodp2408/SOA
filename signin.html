@@ -12,10 +12,10 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/font.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="/css/message.css">
+        <link rel="stylesheet" href="../login/css/font.css">
+        <link rel="stylesheet" href="../login/css/normalize.css">
+        <link rel="stylesheet" href="../login/css/message.css">
+        <link rel="stylesheet" href="../login/css/estilos.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -34,26 +34,33 @@
             </div>
         </div>
 
-        <header>
-          <img src="images/logo.png">
-        </header>
+        
 
+        <section class="login-box">
+            <img class="logo" src="../login/img/logo2.png"  width="500" height="500">
+            <h1>Iniciar Sesión</h1>
 
-        <section class="form-wrap">
-            <h1>Sign In</h1>
             <form id="signinForm">
-              <input type="email" id="emailInputSignin" placeholder="Email" required>
-              <input type="password" id="passwordInputSignin" placeholder="Password" pattern=".*" required>
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" placeholder="Correo electronico">
 
-              <input type="submit" value="Sign in">
+                <label for="password">Contraseña</label>
+                <input type="password" placeholder="Contraseña">
+
+                <input type="Submit" value="Ingresar" >
+
+                <a href="#">Olvidaste tu contraseña?</a>
             </form>
         </section>
 
-        <script src="js/vendor/jquery-3.1.0.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
-        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
-        <script src="js/config.js"></script>
-        <script src="js/cognito-auth.js"></script>
+        
+
+        <script src="../login/js/config.js"></script>
+        <script src="../login/js/cognito-auth.js"></script>
+        <script src="../login/js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="../login/js/vendor/jquery-3.1.0.js"></script>
+        <script src="../login/js/vendor/bootstrap.min.js"></script>
+        <script src="../login/js/vendor/amazon-cognito-identity.min.js"></script>
+
     </body>
 </html>
